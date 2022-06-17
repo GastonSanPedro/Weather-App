@@ -1,0 +1,49 @@
+.containerCard{
+    width: 300px;
+    height: 200px;
+    border: grey solid 1px;
+    display: flex;
+    flex-direction: column;
+    border: solid 3px rgb(17, 17, 17);
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 3px 3px black;
+    margin-top: 3rem;
+}
+
+
+h4{
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+h4:hover{
+    font-size: 2rem;
+}
+.boton{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 3px;
+    margin-left: 90%;
+    margin-top: 4px;
+    width: 25px;
+    height: 30px;
+}
+
+.temperature{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+}
+
+.imagenCard{
+    width: 80px;
+    height: 80px;
+    border: 3px solid black;
+    box-shadow: 2px 2px black;
+}

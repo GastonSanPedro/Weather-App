@@ -1,0 +1,28 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 40px;
+}
+img{
+    width: 120px;
+    height: 95px;
+    border-radius: 30%;
+    margin: 1rem;
+    border: 2px solid black
+}
+.title{
+    margin-top: 3rem;
+display: flex;
+color: rgb(254, 254, 255);
+font-size: 2.2rem;
+align-items: center;
+text-align: center;
+font-family:Georgia, 'Times New Roman', Times, serif;
+text-shadow: 3px 3px black;
+}
+h2:hover{
+    color: blue;
+}
+
