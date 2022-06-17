@@ -20,22 +20,26 @@ h4:hover{
     font-size: 2rem;
 }
 .boton{
-    background-color: red;
+    position: relative;
+    background-color: rgb(253, 70, 70);
     color: white;
     font-weight: bold;
-    font-size: 0.8rem;
-    border: none;
+    font-size: 1rem;
+    margin-left: 250px;
+    border: 1px solid black;
     border-radius: 3px;
-    margin-left: 90%;
     margin-top: 4px;
-    width: 25px;
-    height: 30px;
+    width: 36px;
+    height: 28px;
     animation: spinner2 600ms linear infinite;
     }
     @keyframes spinner2 {
     to {
     transform: rotate(0deg);
     }
+}
+.boton:hover{
+    background-color: red;
 }
 
 .temperature{
