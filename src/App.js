@@ -3,16 +3,10 @@ import "./App.css";
 import Nav from "./components/Nav.jsx";
 import Cards from "./components/Cards.jsx";
 import video from "./videos/rain1.mp4";
+import {BrowserRouter as Router, Switch,Route,} from "react-router-dom";
+import AboutMe from "./components/aboutMe.jsx";
+import Information from "./components/Infomation.jsx";
 
-/*class App extends React.Component{
-  constructor(){
-
-  }
-
-  render(){
-    return
-  }
-}*/
 function App() {
   const [cities, setCities] = useState([]);
   let apiKey = "4ae2636d8dfbdc3044bede63951a019b";
@@ -56,13 +50,25 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <Router>
       <video src={video} autoPlay loop muted></video>
+      <div className="App">
       <div className="content">
-        <Nav onSearch={onSearch} />
-        <Cards cities={cities} onClose={onClose} />
+      <Switch>
+          <Route exact path="/">
+            <Nav onSearch={onSearch} />
+            <Cards cities={cities} onClose={onClose} />
+          </Route>
+          <Route exact path='/aboutMe'>
+            <AboutMe/>
+          </Route>
+          <Route>
+            <Information/>
+          </Route>
+      </Switch>
       </div>
     </div>
+    </Router>
   );
 }
 

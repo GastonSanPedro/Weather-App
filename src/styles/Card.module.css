@@ -1,6 +1,6 @@
 .containerCard{
-    width: 300px;
-    height: 200px;
+    width: 305px;
+    height: 218px;
     border: grey solid 1px;
     display: flex;
     flex-direction: column;
@@ -9,10 +9,13 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-shadow: 3px 3px black;
     margin-top: 3rem;
+    background-color: rgba(196, 189, 189, 0.4);
+
 }
 
 
 h4{
+    color:rgb(43, 29, 29);
     font-size: 1.8rem;
     text-decoration: underline;
 }

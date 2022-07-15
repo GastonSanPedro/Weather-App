@@ -1,11 +1,12 @@
 import React from "react";
 import s from '../styles/Card.module.css'
+import { Link } from "react-router-dom";
 
 export default function Card({ name, min, max, img, id, onClose }) {
   return (
     <div className={s.containerCard}>
       <button className={s.boton} onClick={onClose}>X</button>
-      <h4>{name}</h4>
+      <Link to='/information/:ciudadId'><h4>{name}</h4></Link>
       <article className={s.temperature}>
         <section className={s.min}>
           <p>Min</p>
