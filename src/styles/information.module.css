@@ -1,20 +1,20 @@
 .buttonBack{
     border: 2px solid black;
-    background-color: rgba(49, 1, 1, 0.708); 
+    background-color: rgba(255, 255, 255, 0.445); 
     width: 200px;
-    color: white;
+    color: rgb(49, 1, 1);
     font-weight: bold;
     margin-top: 1.8rem;
     height: 2.5rem;
     border-radius: 10px;
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: white solid 3px;
+    border: black solid 3px;
 }
 .buttonBack:hover{
     background-color:rgba(255, 255, 255, 0.445); 
-    color: rgb(49, 1, 1); 
-    border: black solid 3px;
+    color: whitesmoke; 
+    border: whitesmoke solid 3px;
 }
 
 .map{
@@ -34,7 +34,7 @@
 .title{
     font-size: 1.8rem;
     padding: 0.6rem;
-    background-color: #1f1f1fca;;
+    background-color: #1f1f1fca;
     color: rgb(148, 0, 0);
     width: 100vw;
 }
