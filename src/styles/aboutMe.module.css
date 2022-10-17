@@ -9,8 +9,7 @@
   margin-top: 2rem;
 }
 .contacto{
-width: 50vw;
-
+max-width: 50vw;
 }
 ul {
   display: flex;
@@ -23,35 +22,35 @@ ul {
 .linkedin {
   background-color: black;
   border: none;
-  width: 80px;
-  height: 50px;
+  width: 60px;
+  height: 35px;
 }
 .linkedin:hover{
-    width: 85px;
-    height: 55px;
+    width: 65px;
+    height: 40px;
 }
 .github {
-    width: 100px;
-    height: 50px;
+    width: 70px;
+    height: 35px;
     color: white;
 }
 .github:hover{
-    width: 105px;
-    height: 55px;
+    width: 75px;
+    height: 40px;
 }
 .whatsApp {
-    width: 70px;
-    height: 50px;
+    width: 55px;
+    height: 40px;
 }
 .whatsApp:hover{
-    width: 70px;
-    height: 55px;
+    width: 60px;
+    height: 45px;
 }
 .mail {
-    width: 75px;
-    height: 50px;
+    width: 60px;
+    height: 40px;
 }
 .mail:hover{
-    width: 80px;
-    height: 55px;
+    width: 65px;
+    height: 45px;
 }

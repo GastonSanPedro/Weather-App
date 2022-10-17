@@ -8,6 +8,7 @@ export default function AboutMe(){
            <section className={s.footer}>
             <h5>Created by Gaston San Pedro</h5>
                 <ul className={s.contacto}>
+                    <h5>Contact to me:</h5>
                     <li><a href="https://www.linkedin.com/in/gaston-emanuel-san-pedro-66b17a1b7/">
                         <img className={s.linkedin} src="https://blog.waalaxy.com/wp-content/uploads/2021/01/Linkedin-Logo-2048x1280.png" alt="Linkedin" />
                         </a>
