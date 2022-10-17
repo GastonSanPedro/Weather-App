@@ -10,6 +10,14 @@
     box-shadow: 3px 3px black;
     margin-top: 3rem;
     background-color: rgba(196, 189, 189, 0.4);
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.containerCard:hover{
+    border: whitesmoke solid 3px;;
+    box-shadow:  whitesmoke 2px 2px;;
+    background-color: rgba(196, 189, 189, 0.752);
 }
 
 .title{
@@ -17,9 +25,7 @@
     font-size: 1.8rem;
     text-decoration: underline;
 }
-h4:hover{
-    font-size: 2rem;
-}
+
 .boton{
     position: relative;
     background-color: rgb(253, 70, 70);
@@ -43,7 +49,8 @@ h4:hover{
     justify-content: space-around;
     font-size: 1.3rem;
     font-weight: bold;
-    
+    text-decoration: none;
+    color: black;
 }
 
 .imagenCard{

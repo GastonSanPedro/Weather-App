@@ -1,8 +1,8 @@
 .containerCards{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .spiner{
@@ -34,4 +34,15 @@
 }
 .cargando:hover{
     color: white;
+}
+
+.buttonPagination{
+    width: 80px;
+    height: 80px;
+    font-size: 3rem;
+    border-radius: 50%;
+    background-color: rgba(237, 238, 255, 0.486);
+}
+.buttonPagination:hover{
+    background-color: rgba(237, 238, 255);
 }

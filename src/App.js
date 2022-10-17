@@ -8,6 +8,7 @@ import AboutMe from "./components/aboutMe.jsx";
 import Information from "./components/Infomation.jsx";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState(0)
   const [cities, setCities] = useState([]);
   let apiKey = process.env.REACT_APP_apiKeyWeather;
   function onSearch(city) {
@@ -51,6 +52,7 @@ function App() {
 
   function onClose(id) {
     setCities((oldCities) => oldCities.filter((city) => city.id !== id));
+    setCurrentPage(0)
   }
 
   return (
@@ -61,7 +63,7 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Nav onSearch={onSearch} />
-              <Cards cities={cities} onClose={onClose} />
+              <Cards cities={cities} onClose={onClose} currentPage={currentPage} setCurrentPage={setCurrentPage} />
             </Route>
             {/* <Route exact path="/aboutMe">
               <AboutMe />

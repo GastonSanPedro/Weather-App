@@ -2,24 +2,28 @@ import React from "react";
 import Card from "./Card.jsx";
 import s from '../styles/Cards.module.css'
 import { useState } from "react";
+import arrowBack from "../img/arrowBack.png"
+import arrowNext from "../img/arrowNext.png"
 
-export default function Cards({cities, onClose }) {
-  // const [] = useState()
-  
-  // const handleBack = ()=>{
+export default function Cards({cities, onClose, currentPage,  setCurrentPage}) {
+  const filteredCities = ()=>{
+    return cities.slice(currentPage, currentPage+2)
+  }
 
-  // }
 
-  // const handleNext= ()=>{
+  const handleBack = ()=>{
+    if(currentPage > 0) setCurrentPage(currentPage - 2)
+  }
 
-  // }
-  
+  const handleNext= ()=>{
+    if(cities.length > currentPage+2 ) setCurrentPage(currentPage + 2)
+  }
+   
   if(cities && cities.length) {
-    // if(cities.split())
     return (
       <div className={s.containerCards}>
-      {/* <button onClick={handleBack}>previous</button> */}
-        {cities.map((c) => 
+      {cities.length >2 && currentPage > 0 && <button onClick={handleBack} className={s.buttonPagination}>⇦</button>}
+        {filteredCities().map((c) => 
           <Card
             name={c.name}
             min={c.min}
@@ -30,7 +34,7 @@ export default function Cards({cities, onClose }) {
             onClose={() => onClose(c.id)}
           />
         )}
-        {/* <button onClick={handleNext}>next</button> */}
+        {cities.length >2 && cities.length > currentPage+2  && <button onClick={handleNext} className={s.buttonPagination}>⇨</button>}
       </div>
     );
   }else{
