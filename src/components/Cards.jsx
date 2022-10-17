@@ -1,9 +1,6 @@
 import React from "react";
 import Card from "./Card.jsx";
 import s from '../styles/Cards.module.css'
-import { useState } from "react";
-import arrowBack from "../img/arrowBack.png"
-import arrowNext from "../img/arrowNext.png"
 
 export default function Cards({cities, onClose, currentPage,  setCurrentPage}) {
   const filteredCities = ()=>{

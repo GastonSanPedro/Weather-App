@@ -64,10 +64,8 @@ function App() {
             <Route exact path="/">
               <Nav onSearch={onSearch} />
               <Cards cities={cities} onClose={onClose} currentPage={currentPage} setCurrentPage={setCurrentPage} />
-            </Route>
-            {/* <Route exact path="/aboutMe">
               <AboutMe />
-            </Route> */}
+            </Route>
             <Route exact path= {`/information/:ciudadId`}>
               <Information cities={cities} onClose={onClose}/>
             </Route>

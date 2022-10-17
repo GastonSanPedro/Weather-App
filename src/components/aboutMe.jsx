@@ -5,22 +5,9 @@ import s from '../styles/aboutMe.module.css'
 export default function AboutMe(){
     return(
         <div className={s.containerAbout}>
-           <section className={s.header}>
-                <Link to='/'><p className={s.volver}>Volver</p></Link>
-                <h1>Bienvenidos</h1>
-           </section>
-           <main>
-                <section className={s.info}>
-                    <p>Hola! mi nombre es Gaston San Pedro y soy desarrollador fullstack.</p> 
-                    <p>Actualmente resido en Capital Federal, Buenos Aires, Argentina.</p> 
-                    <p>Comencé a estudiar este rubro hace ya casi 1 año y medio, y aun me encuentro con muchas ganas de seguir aprendiendo y poner en practica todos mis conocimientos.</p> 
-                    <p>Me considero una persona proactiva, responsable, y con una gran facilidad para el trabajo en equipo.</p>
-                    <p>Si queres saber mas de mi, te dejo varios links de contacto que te van a ser de utilidad...</p>
-                    <img className={s.flecha}src="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/2b07.png" alt="flecha" />
-                </section>
-           </main>
            <section className={s.footer}>
-           <ul >
+            <h5>Created by Gaston San Pedro</h5>
+                <ul className={s.contacto}>
                     <li><a href="https://www.linkedin.com/in/gaston-emanuel-san-pedro-66b17a1b7/">
                         <img className={s.linkedin} src="https://blog.waalaxy.com/wp-content/uploads/2021/01/Linkedin-Logo-2048x1280.png" alt="Linkedin" />
                         </a>
