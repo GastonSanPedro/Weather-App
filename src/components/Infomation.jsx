@@ -6,6 +6,8 @@ import mapboxgl, {Marker, Popup} from 'mapbox-gl';
 import { useLayoutEffect } from "react";
 import CardInfo from "./CardInfo";
 
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default; // eslint-disable-line
+
 const {REACT_APP_apiKeyMap} = process.env
 
 console.log(REACT_APP_apiKeyMap)
