@@ -38,7 +38,7 @@ useLayoutEffect(()=>{
   return (
     <div>
       <article className={s.container}>
-        <h2 className={s.title}>Informacion acerca de la ciudad: </h2>
+        <h2 className={s.title}>Information about the city: </h2>
         {cityInformation ? 
         <div className={s.containerMapandCard}>
             <div ref={mapDiv} className={s.map}></div>

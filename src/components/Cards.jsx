@@ -37,7 +37,7 @@ export default function Cards({cities, onClose, currentPage,  setCurrentPage}) {
   }else{
       return(
           <div className={s.cargando}>
-            Sin ciudades por el momento...
+            There aren't cities currently...
             <p className={s.spiner}></p>
           </div>
       )

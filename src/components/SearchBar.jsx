@@ -10,10 +10,10 @@ export default function SearchBar({onSearch}) {
     }} >
       <input className={s.inputCity} 
       type="text" 
-      placeholder="Ingrese una ciudad..." 
+      placeholder="Enter a city..." 
       value={city} 
       onChange={e=> setCity(e.target.value)}/>
-      <input className={s.button} type="submit" value="Agregar" />
+      <input className={s.button} type="submit" value="Add" />
     </form>
   );
 }
