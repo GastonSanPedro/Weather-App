@@ -10,11 +10,9 @@
     box-shadow: 3px 3px black;
     margin-top: 3rem;
     background-color: rgba(196, 189, 189, 0.4);
-
 }
 
-
-h4{
+.title{
     color:rgb(43, 29, 29);
     font-size: 1.8rem;
     text-decoration: underline;
@@ -34,12 +32,6 @@ h4:hover{
     margin-top: 4px;
     width: 36px;
     height: 28px;
-    animation: spinner2 600ms linear infinite;
-    }
-    @keyframes spinner2 {
-    to {
-    transform: rotate(0deg);
-    }
 }
 .boton:hover{
     background-color: red;

@@ -24,18 +24,3 @@
 .search{
     margin-top: 3rem;
 }
-
-button {
-    height: 40px;
-    width: 40px;
-    background: #151825;
-    border-radius: 50%;
-    border: 1px solid #1D9AF2;
-    border-top: 2px solid #fff;
-    animation: spinner1 600ms linear infinite;
-    }
-    @keyframes spinner1 {
-    to {
-    transform: rotate(360deg);
-    }
-    }

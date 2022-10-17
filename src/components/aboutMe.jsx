@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import s from '../styles/aboutMe.module.css'
 
 export default function AboutMe(){
     return(
         <div className={s.containerAbout}>
            <section className={s.header}>
+                <Link to='/'><p className={s.volver}>Volver</p></Link>
                 <h1>Bienvenidos</h1>
            </section>
            <main>

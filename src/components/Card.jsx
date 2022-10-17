@@ -6,7 +6,7 @@ export default function Card({ name, min, max, img, id, onClose }) {
   return (
     <div className={s.containerCard}>
       <button className={s.boton} onClick={onClose}>X</button>
-      <Link to='/information/:ciudadId'><h4>{name}</h4></Link>
+      <Link to={`/information/${id}`}><h4 className={s.title}>{name}</h4></Link>
       <article className={s.temperature}>
         <section className={s.min}>
           <p>Min</p>

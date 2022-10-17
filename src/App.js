@@ -3,13 +3,13 @@ import "./App.css";
 import Nav from "./components/Nav.jsx";
 import Cards from "./components/Cards.jsx";
 import video from "./videos/rain1.mp4";
-import {BrowserRouter as Router, Switch,Route,} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AboutMe from "./components/aboutMe.jsx";
 import Information from "./components/Infomation.jsx";
 
 function App() {
   const [cities, setCities] = useState([]);
-  let apiKey = "4ae2636d8dfbdc3044bede63951a019b";
+  let apiKey = process.env.REACT_APP_apiKeyWeather;
   function onSearch(city) {
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
@@ -22,12 +22,16 @@ function App() {
           const city = {
             min: Math.round(responseJson.main.temp_min),
             max: Math.round(responseJson.main.temp_max),
+            humidity: responseJson.main.humidity,
+            feels_like: Math.round(responseJson.main.feels_like),
+            country: responseJson.sys.country,
             img: responseJson.weather[0].icon,
             id: responseJson.id,
             wind: responseJson.wind.speed,
             temp: responseJson.main.temp,
             name: responseJson.name,
             weather: responseJson.weather[0].main,
+            weatherDescription: responseJson.weather[0].description,
             clouds: responseJson.clouds.all,
             latitude: responseJson.coord.lat,
             longitude: responseJson.coord.lon,
@@ -53,21 +57,21 @@ function App() {
     <Router>
       <video src={video} autoPlay loop muted></video>
       <div className="App">
-      <div className="content">
-      <Switch>
-          <Route exact path="/">
-            <Nav onSearch={onSearch} />
-            <Cards cities={cities} onClose={onClose} />
-          </Route>
-          <Route exact path='/aboutMe'>
-            <AboutMe/>
-          </Route>
-          <Route>
-            <Information/>
-          </Route>
-      </Switch>
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
+              <Nav onSearch={onSearch} />
+              <Cards cities={cities} onClose={onClose} />
+            </Route>
+            {/* <Route exact path="/aboutMe">
+              <AboutMe />
+            </Route> */}
+            <Route exact path= {`/information/:ciudadId`}>
+              <Information cities={cities} onClose={onClose}/>
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
     </Router>
   );
 }
