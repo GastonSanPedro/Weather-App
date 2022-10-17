@@ -5,19 +5,14 @@ import { Link } from "react-router-dom";
 import mapboxgl, {Marker, Popup} from 'mapbox-gl';
 import { useLayoutEffect } from "react";
 import CardInfo from "./CardInfo";
-
 mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default; // eslint-disable-line
 
 const {REACT_APP_apiKeyMap} = process.env
-
-console.log(REACT_APP_apiKeyMap)
-
 mapboxgl.accessToken = REACT_APP_apiKeyMap
 
 export default function Information({ cities }) {
   let { ciudadId } = useParams();
   const cityInformation = cities.find((city) => city.id === Number(ciudadId));
-  console.log(cityInformation);
 const mapDiv = useRef(null);
 
 useLayoutEffect(()=>{
