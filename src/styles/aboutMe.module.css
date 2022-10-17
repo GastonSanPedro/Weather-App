@@ -1,6 +1,6 @@
 .footer {
   background-color: rgba(26, 52, 87, 0.788);
-  width: 100vw;
+  width: 98vw;
   height: 70px;
   display: flex;
   justify-content: space-around;
@@ -9,7 +9,7 @@
   margin-top: 2rem;
 }
 .contacto{
-max-width: 50vw;
+width: 50vw;
 }
 ul {
   display: flex;
